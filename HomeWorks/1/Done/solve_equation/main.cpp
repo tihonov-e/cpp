@@ -42,10 +42,12 @@ int solve_equation (double a, double b, double c)
 
     D = b*b - 4 * a * c;
 
-    //if D = 0 -> cout<< "D= 0, no solve!"<<endl;
+    //if D = 0 -> cout<< "D = 0, x = - b/2a!"<<endl;
     //-------------------------------------------
     if (D == 0)
-    {   cout << "D = 0 \n" << "no solves!" << endl;
+    {
+
+        cout << "D =  "<< D << "\n" << "x1 = x2 = " << (-b / (2*a)) << endl;
         return 1;
     }
 
@@ -60,6 +62,17 @@ int solve_equation (double a, double b, double c)
         cout << "D = " << D << "\n" << "x1 = " << x1 << "\n" << "x2 = " << x2 << endl;
         return 1;
     }
+
+    //if D < 0 -> cout << "D < 0 ", " no solves!" << endl;
+     //-------------------------------------------
+
+     if ( D < 0 )
+     {
+         cout << "D < 0" << "\n" << " No solves!" << endl;
+         return 1;
+     }
+
+     return 1;
 }
 int main()
 {
@@ -76,6 +89,6 @@ int main()
     //call function
     solve_equation (a, b, c);
 
-    cout << "Hello world!" << endl;
+    //cout << "Hello world!" << endl;
     return 0;
 }
