@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1476120722 source:c:\cpp\cpp-master\01\homework\done\solve_equation\main.cpp
+	<iostream>
+	<cmath>
+
